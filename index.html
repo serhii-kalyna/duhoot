@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DUHOOT</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> 
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+
+	<div id="container">
+		
+		<div id="header">
+
+			<div id="block-navigation">
+
+				<img class="logo" src="images/logo.png" alt="">
+
+				<div id="head-nav">
+					<ul>
+						<li><a href="">REALITY</a></li>
+						<li><a href="">LIVING</a></li>
+						<li><a href="">EDUCATION</a></li>
+						<li><a href="">ENTERTAINMENT</a></li>
+						<li><a href="">MOBILITY</a></li>
+					</ul>
+				</div>
+
+				<div class="loop-btn"><img src="images/loop.png" alt=""></div>
+
+				<div class="block-user"><img src="images/user-icon.png" alt=""><p>LOGIN</p></div>
+
+			</div>
+
+			<div id="block-search">
+
+				<h4>What are you looking for?</h4> 
+
+				<form action="" method="">
+
+					<select name="city" id="city">
+						<option value="dubai">Dubai</option>
+						<option value="poltava">Poltava</option>
+						<option value="new_york">New York</option>
+						<option value="kyiv">Kyiv</option>
+						<option value="london">London</option>
+						<option value="france">France</option>
+					</select>
+
+					<select name="type" id="type">
+						<option value="education">Education</option>
+						<option value="living">Living</option>
+						<option value="mobility">Mobility</option>
+						<option value="reality">Reality</option>
+					</select>
+
+					<input type="text" id="keyword" name="keyword" placeholder="Keyword, name, date, ...">
+
+					<input type="submit" id="search-btn" name="search" value="SEARCH">
+
+				</form>
+
+			</div>
+
+			<img class="slider" src="images/head-img.jpg" alt="">
+
+		</div>
+
+
+		<div id="block-filter">
+			
+			<div id="filter-nav">
+				<ul> 
+					<li class="active"><a href="">RECOMMENDED</a></li>
+					<li><a href="">LATEST</a></li>
+					<li><a href="">HIGHLIGHTS</a></li>
+				</ul>
+			</div>	
+
+			<select name="filter-city" id="filter-city">
+				<option value="dubai">DUBAI</option>
+				<option value="poltava">POLTAVA</option>
+				<option value="new_york">NEW YORK</option>
+				<option value="kyiv">KYIV</option>
+				<option value="london">LONDON</option>
+				<option value="france">FRANCE</option>
+			</select>
+
+			<div id="show-map">SHOW MAP<img src="images/map-icon.png" alt=""></div>
+			<div id="hide-map">HIDE MAP<img src="images/map-icon-active.png" alt=""></div>
+
+			<div id="filter">
+				<p>FILTER:</p>
+				<ul>
+					<li><a href=""><span class="img-box green"><img src="images/home-icon.png" alt=""></span></a></li>
+					<li><a href=""><span class="img-box"><img src="images/girl-icon.png" alt=""></span></a></li>
+					<li><a href=""><span class="img-box"><img src="images/edu-icon.png" alt=""></span></a></li>
+					<li><a href=""><span class="img-box yellow"><img src="images/music-icon.png" alt=""></span></a></li>
+					<li><a href=""><span class="img-box blue"><img src="images/car-icon.png" alt=""></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			
+			<div id="block-box">
+				<div class="box4">
+					<span>$2,990</span>
+					<img src="images/home-image.jpg" alt="">
+
+					<div class="hover-box">
+						<a class="hover-btn" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating1-5" type="radio" name="rating1" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating1-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-4" type="radio" name="rating1" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating1-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-3" type="radio" name="rating1" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating1-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-2" type="radio" name="rating1" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating1-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-1" type="radio" name="rating1" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating1-1" title="1 out of 5 stars"></label>
+						</div>
+
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img"><img src="images/home-big.png" alt=""></div>
+					<p>2 bedroom house for rent in Dubai</p>
+
+					<div class="block-rating">
+						<h5>VISION AGENCY</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating1-5" type="radio" name="rating1" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating1-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-4" type="radio" name="rating1" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating1-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-3" type="radio" name="rating1" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating1-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-2" type="radio" name="rating1" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating1-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating1-1" type="radio" name="rating1" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating1-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(365)</h6>
+					</div>
+				</div>
+				<div class="box4 yellow-theme">
+					<img src="images/rest-image.jpg" alt="">
+
+					<div class="hover-box hover-yellow">
+						<a class="hover-btn hover-yellow" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating2-5" type="radio" name="rating2" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating2-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-4" type="radio" name="rating2" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating2-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-3" type="radio" name="rating2" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating2-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-2" type="radio" name="rating2" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating2-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-1" type="radio" name="rating2" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating2-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img yellow"><img src="images/music-big.png" alt=""></div>
+					<p>Beach party festival 2014</p>
+
+					<div class="block-rating">
+						<h5>LONG BEACH</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating2-5" type="radio" name="rating2" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating2-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-4" type="radio" name="rating2" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating2-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-3" type="radio" name="rating2" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating2-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-2" type="radio" name="rating2" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating2-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating2-1" type="radio" name="rating2" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating2-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(1165)</h6>
+					</div>
+				</div>
+
+				<div class="box4 blue-theme">
+					<img src="images/home-image.jpg" alt="">
+
+					<div class="hover-box hover-blue">
+						<a class="hover-btn hover-blue" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating3-5" type="radio" name="rating3" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating3-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-4" type="radio" name="rating3" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating3-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-3" type="radio" name="rating3" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating3-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-2" type="radio" name="rating3" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating3-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-1" type="radio" name="rating3" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating3-1" title="1 out of 5 stars"></label>
+						</div>
+
+
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img blue"><img src="images/car-big.png" alt=""></div>
+					<p>Aliquam quis pulvinar purus</p>
+
+					<div class="block-rating">
+						<h5>BUS TRANS</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating3-5" type="radio" name="rating3" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating3-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-4" type="radio" name="rating3" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating3-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-3" type="radio" name="rating3" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating3-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-2" type="radio" name="rating3" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating3-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating3-1" type="radio" name="rating3" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating3-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(365)</h6>
+					</div>
+				</div>
+				<div class="box4">
+					<span>$2,990</span>
+					<img src="images/home-image2.jpg" alt="">
+
+					<div class="hover-box">
+						<a class="hover-btn" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating4-5" type="radio" name="rating4" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating4-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-4" type="radio" name="rating4" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating4-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-3" type="radio" name="rating4" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating4-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-2" type="radio" name="rating4" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating4-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-1" type="radio" name="rating4" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating4-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img"><img src="images/home-big.png" alt=""></div>
+					<p>4 bedroom house for rent in Dubai</p>
+
+					<div class="block-rating">
+						<h5>REALITY AGENCY</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating4-5" type="radio" name="rating4" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating4-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-4" type="radio" name="rating4" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating4-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-3" type="radio" name="rating4" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating4-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-2" type="radio" name="rating4" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating4-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating4-1" type="radio" name="rating4" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating4-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(165)</h6>
+					</div>
+				</div>
+
+				<div class="box2">
+					<img src="images/agency.jpg" alt="">
+					<div class="box-img green"><img src="images/home-big.png" alt=""></div>
+
+					<div class="star-rating__wrap-box2">
+						<input class="star-rating__input" id="star-rating11-5" type="radio" name="rating11" value="5">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating11-5" title="5 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating11-4" type="radio" name="rating11" value="4">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating11-4" title="4 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating11-3" type="radio" name="rating11" value="3">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating11-3" title="3 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating11-2" type="radio" name="rating11" value="2">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating11-2" title="2 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating11-1" type="radio" name="rating11" value="1">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating11-1" title="1 out of 5 stars"></label>
+					</div>
+					<span class="rating">(365)</span>
+
+					<h4>VISION AGENCY</h4>
+
+					<div class="block-info">
+
+						<div class="star-rating__wrap-box22">
+							<input class="star-rating__input" id="star-rating11-5" type="radio" name="rating11" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating11-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating11-4" type="radio" name="rating11" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating11-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating11-3" type="radio" name="rating11" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating11-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating11-2" type="radio" name="rating11" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating11-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating11-1" type="radio" name="rating11" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating11-1" title="1 out of 5 stars"></label>
+						</div>
+
+						<h3>LUCY-P</h3>
+						<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<span href="">...read more</span></p>
+					</div>
+					<div class="vert-line"></div>
+					<div class="box-photo"><img src="images/women1.jpg" alt=""></div>
+
+				</div>
+				<div class="box2 yellow-theme">
+					<img src="images/club.jpg" alt="">
+					<div class="box-img yellow"><img src="images/home-big.png" alt=""></div>
+
+					<div class="star-rating__wrap-box2">
+						<input class="star-rating__input" id="star-rating12-5" type="radio" name="rating12" value="5">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating12-5" title="5 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating12-4" type="radio" name="rating12" value="4">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating12-4" title="4 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating12-3" type="radio" name="rating12" value="3">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating12-3" title="3 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating12-2" type="radio" name="rating12" value="2">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating12-2" title="2 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating12-1" type="radio" name="rating12" value="1">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating12-1" title="1 out of 5 stars"></label>
+					</div>
+					<span class="rating">(1365)</span>
+
+					<h4>SKYBOX CLUB</h4>
+					<div class="block-info">
+
+						<div class="star-rating__wrap-box22">
+							<input class="star-rating__input" id="star-rating12-5" type="radio" name="rating12" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating12-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating12-4" type="radio" name="rating12" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating12-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating12-3" type="radio" name="rating12" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating12-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating12-2" type="radio" name="rating12" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating12-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating12-1" type="radio" name="rating12" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating12-1" title="1 out of 5 stars"></label>
+						</div>
+
+						<h3>PETER145</h3>
+						<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<span href="">...read more</span></p>
+					</div>
+					<div class="vert-line"></div>
+					<div class="box-photo"><img src="images/men1.jpg" alt=""></div>
+				</div>
+
+				<div class="box4">
+
+					<span>$2,990</span>
+					<img src="images/home-image.jpg" alt="">
+					
+					<div class="hover-box">
+						<a class="hover-btn" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating5-5" type="radio" name="rating5" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating5-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-4" type="radio" name="rating5" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating5-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-3" type="radio" name="rating5" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating5-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-2" type="radio" name="rating5" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating5-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-1" type="radio" name="rating5" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating5-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img"><img src="images/home-big.png" alt=""></div>
+					<p>2 bedroom house for rent in Dubai</p>
+
+					<div class="block-rating">
+						<h5>VISION AGENCY</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating5-5" type="radio" name="rating5" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating5-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-4" type="radio" name="rating5" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating5-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-3" type="radio" name="rating5" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating5-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-2" type="radio" name="rating5" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating5-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating5-1" type="radio" name="rating5" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating5-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(365)</h6>
+					</div>
+				</div>
+				<div class="box4 yellow-theme">
+					<img src="images/rest-image.jpg" alt="">
+
+					<div class="hover-box hover-yellow">
+						<a class="hover-btn hover-yellow" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating6-5" type="radio" name="rating6" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating6-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-4" type="radio" name="rating6" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating6-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-3" type="radio" name="rating6" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating6-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-2" type="radio" name="rating6" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating6-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-1" type="radio" name="rating6" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating6-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img yellow"><img src="images/music-big.png" alt=""></div>
+					<p>Beach party festival 2014</p>
+
+					<div class="block-rating">
+						<h5>LONG BEACH</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating6-5" type="radio" name="rating6" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating6-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-4" type="radio" name="rating6" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating6-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-3" type="radio" name="rating6" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating6-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-2" type="radio" name="rating6" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating6-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating6-1" type="radio" name="rating6" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating6-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(1165)</h6>
+					</div>
+				</div>
+				<div class="box4 blue-theme">
+					<img src="images/home-image.jpg" alt="">
+
+					<div class="hover-box hover-blue">
+						<a class="hover-btn hover-blue" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating7-5" type="radio" name="rating7" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating7-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-4" type="radio" name="rating7" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating7-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-3" type="radio" name="rating7" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating7-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-2" type="radio" name="rating7" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating7-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-1" type="radio" name="rating7" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating7-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img blue"><img src="images/car-big.png" alt=""></div>
+					<p>Aliquam quis pulvinar purus</p>
+
+					<div class="block-rating">
+						<h5>BUS TRANS</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating7-5" type="radio" name="rating7" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating7-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-4" type="radio" name="rating7" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating7-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-3" type="radio" name="rating7" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating7-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-2" type="radio" name="rating7" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating7-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating7-1" type="radio" name="rating7" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating7-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(365)</h6>
+					</div>
+				</div>
+				<div class="box4">
+					<span>$2,990</span>
+					<img src="images/home-image2.jpg" alt="">
+
+					<div class="hover-box">
+						<a class="hover-btn" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating8-5" type="radio" name="rating8" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating8-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-4" type="radio" name="rating8" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating8-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-3" type="radio" name="rating8" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating8-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-2" type="radio" name="rating8" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating8-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-1" type="radio" name="rating8" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating8-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img"><img src="images/home-big.png" alt=""></div>
+					<p>4 bedroom house for rent in Dubai</p>
+
+					<div class="block-rating">
+						<h5>REALITY AGENCY</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating8-5" type="radio" name="rating8" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating8-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-4" type="radio" name="rating8" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating8-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-3" type="radio" name="rating8" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating8-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-2" type="radio" name="rating8" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating8-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating8-1" type="radio" name="rating8" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating8-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(165)</h6>
+					</div>
+				</div>
+
+				<div class="box2 yellow-theme">
+					<img src="images/club.jpg" alt="">
+					<div class="box-img yellow"><img src="images/home-big.png" alt=""></div>
+
+					<div class="star-rating__wrap-box2">
+						<input class="star-rating__input" id="star-rating13-5" type="radio" name="rating13" value="5">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating13-5" title="5 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating13-4" type="radio" name="rating13" value="4">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating13-4" title="4 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating13-3" type="radio" name="rating13" value="3">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating13-3" title="3 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating13-2" type="radio" name="rating13" value="2">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating13-2" title="2 out of 5 stars"></label>
+						<input class="star-rating__input" id="star-rating13-1" type="radio" name="rating13" value="1">
+						<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating13-1" title="1 out of 5 stars"></label>
+					</div>
+					<span class="rating">(1365)</span>
+
+					<h4>SKYBOX CLUB</h4>
+					<div class="block-info">
+
+						<div class="star-rating__wrap-box22">
+							<input class="star-rating__input" id="star-rating13-5" type="radio" name="rating13" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating13-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating13-4" type="radio" name="rating13" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating13-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating13-3" type="radio" name="rating13" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating13-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating13-2" type="radio" name="rating13" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating13-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating13-1" type="radio" name="rating13" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md2" for="star-rating13-1" title="1 out of 5 stars"></label>
+						</div>
+
+						<h3>PETER145</h3>
+						<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”<span href="">...read more</span></p>
+					</div>
+					<div class="vert-line"></div>
+					<div class="box-photo"><img src="images/men1.jpg" alt=""></div>
+					<div class="block-info"></div>
+				</div>
+
+				<div class="box4">
+					<span>$2,990</span>
+					<img src="images/home-image.jpg" alt="">
+
+					<div class="hover-box">
+						<a class="hover-btn" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating9-5" type="radio" name="rating9" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating9-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-4" type="radio" name="rating9" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating9-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-3" type="radio" name="rating9" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating9-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-2" type="radio" name="rating9" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating9-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-1" type="radio" name="rating9" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating9-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img"><img src="images/home-big.png" alt=""></div>
+					<p>2 bedroom house for rent in Dubai</p>
+
+					<div class="block-rating">
+						<h5>VISION AGENCY</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating9-5" type="radio" name="rating9" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating9-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-4" type="radio" name="rating9" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating9-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-3" type="radio" name="rating9" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating9-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-2" type="radio" name="rating9" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating9-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating9-1" type="radio" name="rating9" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating9-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(365)</h6>
+					</div>
+				</div>
+				<div class="box4 yellow-theme">
+					<img src="images/rest-image.jpg" alt="">
+
+					<div class="hover-box hover-yellow">
+						<a class="hover-btn hover-yellow" href=""><img src="images/loop-little.png" alt="">SHOW MORE</a>
+						<div class="star-rating__wrap-hover">
+							<input class="star-rating__input" id="star-rating10-5" type="radio" name="rating10" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating10-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-4" type="radio" name="rating10" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating10-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-3" type="radio" name="rating10" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating10-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-2" type="radio" name="rating10" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating10-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-1" type="radio" name="rating10" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-md" for="star-rating10-1" title="1 out of 5 stars"></label>
+						</div>
+						<a class="question-img" href=""><img src="images/question-icon.png" alt=""></a>
+					</div>
+
+					<div class="box-img yellow"><img src="images/music-big.png" alt=""></div>
+					<p>Beach party festival 2014</p>
+
+					<div class="block-rating">
+						<h5>LONG BEACH</h5>
+
+						<div class="star-rating__wrap">
+							<input class="star-rating__input" id="star-rating10-5" type="radio" name="rating10" value="5">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating10-5" title="5 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-4" type="radio" name="rating10" value="4">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating10-4" title="4 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-3" type="radio" name="rating10" value="3">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating10-3" title="3 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-2" type="radio" name="rating10" value="2">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating10-2" title="2 out of 5 stars"></label>
+							<input class="star-rating__input" id="star-rating10-1" type="radio" name="rating10" value="1">
+							<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating10-1" title="1 out of 5 stars"></label>
+						</div>
+						<h6 class="rating">(1165)</h6>
+					</div>
+				</div>
+
+
+				<a class="load-more" href="">Load more &rarr;</a>
+			</div>
+
+			<div id="block-offer">
+				<h2>What can DuHoot offer to you?</h2>
+				<h4>Etiam cursus ipsum quis enim faucibus</h4>
+
+				<div id="block-images">
+					<div class="box-img green-theme">
+						<img src="images/big-home.png" alt="">
+						<div class="g-line"></div>
+					</div>
+					
+					<div class="box-img">
+						<img src="images/big-girl.png" alt="">
+						<div class="g-line"></div>
+					</div>
+
+					<div class="box-img">
+						<img src="images/big-edu.png" alt="">
+						<div class="g-line"></div>
+					</div>
+
+					<div class="box-img">
+						<img src="images/big-music.png" alt="">
+						<div class="g-line"></div>
+					</div>
+
+					<div class="box-img">
+						<img src="images/big-car.png" alt="">
+					</div>
+
+				</div>
+
+				<h3>Reality</h3>
+
+				<div class="box-image-green">
+					<img src="images/voltage.png" alt="">
+				</div>
+
+				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+
+				<div class="box-image-green">
+					<img src="images/pen.png" alt="">
+				</div>
+
+				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+
+			</div>
+
+		</div>
+
+		<div id="footer">
+
+			<h3>Subscribe to our newsletter</h3>
+			<img class="letter-icon" src="images/letter-icon.png" alt="">
+
+			<form action="" method="">
+				<input type="email" name="email" id="email" placeholder="your@email.com">
+				<input type="submit" name="send-email" id="email-btn" value="SUBSCRIBE">
+			</form>
+
+			<img class="bg" src="images/footer-img.jpg" alt="">
+			
+			<div id="info-footer">
+				<div class="box3">
+					<h5>Ipsum quis</h5>
+					<p>Aliquam quis Pulvinar purus Etiam cursus Ipsum quis Enim faucib</p>
+				</div>
+				<div class="box3">
+					<h5>Ipsum quis</h5>
+					<p>Aliquam quis Pulvinar purus Etiam cursus Ipsum quis Enim faucib</p>
+				</div>
+				<div class="box3">
+					<h5>Follow us</h5>
+
+					<img src="images/fb-icon.png" alt="">
+					<img src="images/tw-icon.png" alt="">
+					<img src="images/google-icon.png" alt="">
+					<img src="images/yt-icon.png" alt="">
+
+					<p class="copyright">Copyright © All Rights reserved</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
