@@ -135,7 +135,7 @@
 	font: 18px 'Gotham' !important;
 	color: #fff;
 
-	background-image: url('/images/down-icon.png');
+	background-image: url('../images/down-icon.png');
 	background-position: 182px center;
 	background-repeat: no-repeat;
 
@@ -170,7 +170,7 @@
 	font: 18px 'Gotham' !important;
 	color: #fff;
 
-	background-image: url('/images/down-icon.png');
+	background-image: url('../images/down-icon.png');
 	background-position: 182px center;
 	background-repeat: no-repeat;
 
@@ -270,7 +270,7 @@
 	font: 12px 'Gotham' !important;
 	color: #e94e38;
 
-	background-image: url('/images/down-little.png');
+	background-image: url('../images/down-little.png');
 	background-position: 84px center;
 	background-repeat: no-repeat;
 
